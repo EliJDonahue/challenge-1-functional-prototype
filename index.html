@@ -1,0 +1,181 @@
+<html>
+
+<head>
+
+</head>
+<style>
+    /* font from source files */
+    @font-face {
+        font-family: avenir;
+        src: url(./fonts/AvenirNextLTPro-Regular.otf);
+    }
+
+    /* color classes for styling blocks */
+    .blue {
+        background-color: #2881bb;
+    }
+
+    .teal {
+        background-color: #2c6087;
+    }
+
+    .purple {
+        background-color: #9044b0;
+    }
+
+    .orange {
+        background-color: #ef763d;
+    }
+
+    .red {
+        background-color: #cc3e30;
+    }
+
+    .yellow {
+        background-color: #f2c512;
+    }
+
+    .green {
+        background-color: #2c975f;
+    }
+
+    .grey {
+        background-color: #d1d2cd;
+    }
+
+    #site-container {
+        display: flex; 
+        flex-direction: column;
+        max-width: 1175px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #header {
+        font-family: avenir;
+        margin-left: 4em;
+        color: #090909;
+        
+    }
+
+    #content-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 825px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #hero-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #hero-img {
+        flex: 3;
+        margin: .5em;
+        height: 200px;
+    }
+
+    #hero-caption {
+        flex: 1;        
+        font-family: avenir;
+        margin: .5em;
+        font-size: .85em;
+        color: #090909;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        padding: .5em;
+        max-width: 825px;
+    }
+
+    .small-block, .mid-block {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .small-block .img-block {
+        height: 110px;
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+
+    .mid-block .img-block {
+        height: 140px;
+        margin-left: .5em;
+        margin-right: .5em;
+        margin-top: 40px;
+    }
+
+    .img-caption {
+        height: 40px;
+        margin-left: .5em;
+        margin-right: .5em;
+        margin-top: 40px;
+    }
+   
+</style>
+
+<body>
+    <div id="site-container">
+        <div id="header">
+            <h1>AINULINDALE</h1>
+        </div>
+
+        <div id="content-container">
+            <!-- contains large blue block and text -->
+            <div id="hero-container" class="row">
+                <div id="hero-img" class="blue"> </div>
+                <div id="hero-caption">
+                    There was Eru, the One, who in Arda is called Ilúvatar; and he made first the Ainur, the Holy Ones, that
+                    were the offspring of his thought, and they were with him before aught else was made.
+                </div>
+            </div>
+
+            <!-- contains 4 small content blocks -->
+            <div id="block4-container" class="row">
+                <div id="small-block-1" class="small-block">
+                    <div class="img-block blue"> </div>
+                    <div class="img-caption grey"> </div>
+                </div>
+                <div id="small-block-2" class="small-block">
+                    <div class="img-block teal"> </div>
+                    <div class="img-caption grey"> </div>
+                </div>
+                <div id="small-block-3" class="small-block">
+                    <div class="img-block purple"> </div>
+                    <div class="img-caption grey"> </div>
+                </div>
+                <div id="small-block-4" class="small-block">
+                    <div class="img-block orange"> </div>
+                    <div class="img-caption grey"> </div>
+                </div>
+            </div>
+
+            <!-- contains 3 medium content blocks -->
+            <div id="block3-container" class="row">
+                <div id="mid-block-1" class="mid-block">
+                    <div class="img-block red"> </div>
+                    <div class="img-caption grey"> </div>
+                    <div class="img-caption grey"> </div>
+                </div>
+                <div id="mid-block-2" class="mid-block">
+                    <div class="img-block yellow"> </div>
+                    <div class="img-caption grey"> </div>
+                    <div class="img-caption grey"> </div>
+                </div>
+                <div id="mid-block-3" class="mid-block">
+                    <div class="img-block green"> </div>
+                    <div class="img-caption grey"> </div>
+                    <div class="img-caption grey"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
