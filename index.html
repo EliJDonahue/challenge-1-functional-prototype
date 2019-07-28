@@ -55,7 +55,6 @@
         font-family: avenir;
         margin-left: 4em;
         color: #090909;
-        
     }
 
     #content-container {
@@ -116,6 +115,52 @@
         margin-left: .5em;
         margin-right: .5em;
         margin-top: 40px;
+    }
+
+    @media screen and (max-width: 700px) {
+        .row {   
+            flex-direction: column;
+        }
+
+        #block4-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .small-block {
+            flex: 50%;
+            min-width: 110px;
+        }
+
+        .mid-block .img-caption:last-of-type {
+            display: none;
+        }
+
+        .mid-block .img-block {
+            margin-top: 0px;
+        }
+
+        .img-caption {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        #hero-container {
+            flex-wrap: wrap;
+        }
+
+        #hero-img {
+            flex: 100%;
+            height: 200px;
+        }
+
+        #hero-caption {
+            flex: 100%;
+        }
+
+        #header {
+            margin-left: 1em;
+        }
     }
    
 </style>
